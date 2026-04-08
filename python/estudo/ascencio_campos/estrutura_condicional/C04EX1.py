@@ -16,3 +16,16 @@ Conceiro E: 0 <= média < 5
 nota_trabalho = float(input('Insira a nota do trabalho de laboratório: '))
 nota_avaliacao = float(input('Insira a nota da avaliação semestral: '))
 nota_exame = float(input('Insira a nota do exame: '))
+
+media = ((nota_trabalho * 2) + (nota_avaliacao * 3) + (nota_exame * 5)) / 10
+
+if media >= 8 and media <= 10:
+    print(f'Sua média é {media:.1f} (conceito A)')
+elif media >= 7 and media < 8:
+    print(f'Sua média é {media:.1f} (conceito B)')
+elif media >= 6 and media < 7:
+    print(f'Sua média é {media:.1f} (conceito C)')
+elif media >= 5 and media < 6:
+    print(f'Sua média é {media:.1f} (conceito D)')
+elif media < 5:
+    print(f'Sua média é {media:.1f} (conceito E)')
